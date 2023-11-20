@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROM IN HTML</title>
+</head>
+<body>
+    
+    <!-- from tag is use take input the user -->
+    <!-- from tag to ci=ollect user input -->
+    <!-- from tag attributes common are name ,value,placeholder and required -->
+    <!-- input tag is use self closing -->
+    <!-- required means compulsory fill the satement -->
+    <!--  placeholder is use to default value  -->
+    <form action="/contact-me">
+      UserName:<input type="text" placeholder="Enter the any text" required><br>
+      <!-- here write  type password  hide the password -->
+      Password:<input type="password"><br>
+
+      <!-- name property  to use identify the data whic type of data collect form user -->
+      <label for="first_name"> FirstName:</label>
+      <!-- here lable tag connect the id  -->
+     <input type="text" id="first_name" placeholder="Enter your first name " required><br>
+      <label for="last_name">LastName:</label>
+       <!-- here lable tag connect the id  -->
+      <input type="text" id="last_name" placeholder="Enter your last name" required><br>
+      Date:<input type="date"><br>
+      File:<input type="file"><br>
+      Color:<input type="color"><br>
+      Price Range<input type="range"><br>
+      Poke Me:<input type="button" value="pokked"><br>
+      sumbit:<input type="submit"><br>
+      <!-- value  property default data sets intital value for input element -->
+      <!-- sent to server this is the data sent when form is sumbited -->
+
+      <!-- radio button in html  -->
+      <!-- generally use to exam me multiple choice quesattion ans 1 hi hota usi tatrah radio button hai -->
+      <!-- here name same because name same value hai islye aap koi ek ko select kar sakte hai -->
+      <label for="male">Male:</label>
+      <input type="radio" id="male" name="gender" value="male"><br>
+      <label for="female">Female:</label>
+      <input type="radio"  id="female"name="gender" value="female"><br>
+      <label for="other">Other:</label>
+      <input type="radio"  id="other" name="gender" value="other"><br>
+
+      <!-- here check box -->
+      <label for="c">C:</label>
+      <input type="checkbox" name="language" id="c" value="c">
+      <label for="java">JAVA:</label>
+      <input type="checkbox" name="language" id="java" value="java">
+      <label for="python">PYTHON:</label>
+      <input type="checkbox" name="language" id="python" value="pyhton">
+
+      <!-- select tag -->
+      <label for="country">Select your country</label>
+      <select name="country" id="country">
+        <option value="India" >India</option>
+        <option value="Us">Us</option>
+        <option value="Uk">Uk</option>
+        <option value="other">other</option>
+      </select>
+      
+      <!-- text area tag -->
+      <!-- text area is used for multi-line text input in forms -->
+      <!-- specifies the visible number of line in the text area -->
+      <textarea name="story" id="story"rows="4" cols="5"></textarea>
+      please write the story
+    </form>
+</body>
+</html>
